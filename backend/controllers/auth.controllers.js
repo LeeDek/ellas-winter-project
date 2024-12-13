@@ -1,8 +1,9 @@
-import express from "express";
-
-export const signup = (req, res) => {
-  res.send("Helloha");
-  console.log("signupUser");
+export const signup = async (req, res) => {
+  try {
+    const { fullName, username, password, confirmPassword, gender } = req.body;
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 export const login = (req, res) => {
