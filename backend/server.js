@@ -1,13 +1,14 @@
 import dotenv from "dotenv";
-import express from "express";
+dotenv.config();
 
+import express from "express";
 import authRoutes from "./routes/auth.routes.js";
 import connectToMongoDB from "./db/connectToMongoDB.js";
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-dotenv.config();
+console.log("NODE_ENV:", process.env.NODE_ENV);
 
 app.use(express.json()); // to parse incoming requests with JSON payloads
 
