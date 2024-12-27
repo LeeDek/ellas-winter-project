@@ -26,6 +26,7 @@ const userSchema = new mongoose.Schema(
       default: "",
     },
   },
+  // Created at and Updated at
   { timestamps: true }
 );
 
