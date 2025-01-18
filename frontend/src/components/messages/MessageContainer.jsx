@@ -13,7 +13,7 @@ const MessageContainer = () => {
           {/* Header */}
           <div className="bg-slate-500 px-4 py-2 mb-2">
             <span className="label-text text-gray-300">To: </span>
-            <span className="text-gray-200 font-bold">Ella Dekel</span>
+            <span className="text-gray-200 font-bold">Elah Dekel</span>
           </div>
           <Messages />
           <MessageInput />
