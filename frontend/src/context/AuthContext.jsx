@@ -1,6 +1,10 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useContext } from "react";
 /* eslint-disable react-refresh/only-export-components */
 export const AuthContext = createContext();
+
+export const useAuthContext = () => {
+  return useContext(AuthContext);
+};
 
 // eslint-disable-next-line react/prop-types
 export const AuthContextProvider = ({ children }) => {
