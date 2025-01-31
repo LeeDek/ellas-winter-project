@@ -41,6 +41,9 @@ const useSignup = () => {
         throw new Error(data.error || "Signup failed");
       }
 
+      // localstorage
+      // context
+
       toast.success("Signup successful");
       console.log(data);
     } catch (error) {
