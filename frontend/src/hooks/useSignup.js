@@ -13,7 +13,7 @@ const useSignup = () => {
     confirmPassword,
     gender,
   }) => {
-    const success = handleInputError({
+    const success = handleInputErrors({
       fullName,
       username,
       password,
@@ -58,7 +58,7 @@ const useSignup = () => {
 
 export default useSignup;
 
-function handleInputError({
+function handleInputErrors({
   fullName,
   username,
   password,

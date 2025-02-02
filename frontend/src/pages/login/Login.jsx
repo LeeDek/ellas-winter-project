@@ -10,7 +10,7 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await login({ username, password });
+    await login(username, password);
   };
 
   return (
@@ -53,13 +53,16 @@ const Login = () => {
           >
             {"Don't"} have an account?
           </Link>
-          <button className="btn btn-block btn-sm mt-2" disabled={loading}>
-            {loading ? (
-              <span className="loaidng loading-spinner"></span>
-            ) : (
-              "Login"
-            )}
-          </button>
+
+          <div>
+            <button className="btn btn-block btn-sm mt-2" disabled={loading}>
+              {loading ? (
+                <span className="loaidng loading-spinner"></span>
+              ) : (
+                "Login"
+              )}
+            </button>
+          </div>
         </form>
       </div>
     </div>
