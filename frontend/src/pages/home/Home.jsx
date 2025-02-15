@@ -10,7 +10,7 @@ const Home = () => {
   window.addEventListener("resize", () => setIsMobile(window.innerWidth < 768));
 
   return (
-    <div className="flex sm:h-[500px] md:h-[550px] rounded-lg overflow-hidden bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0">
+    <div className="flex sm:min-h-[500px] md:min-h-[550px] rounded-lg overflow-hidden bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0">
       {/* Show Sidebar on Desktop or when no conversation is selected on mobile */}
       {(!isMobile || !selectedConversation) && <Sidebar />}
 
