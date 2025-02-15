@@ -24,6 +24,7 @@ const MessageContainer = () => {
         />
         <span className="label-text text-gray-300">To: </span>
         <span className="text-gray-200 font-bold">
+          {" "}
           {selectedConversation?.fullName}
         </span>
       </div>
