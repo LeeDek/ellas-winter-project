@@ -15,10 +15,7 @@ const MessageContainer = () => {
   }, [setSelectedConversation]);
 
   return (
-    <div
-      className={`md:min-w-[450px] flex flex-col w-full 
-      ${selectedConversation ? "min-w-[500px]" : "min-w-[350px]"}`}
-    >
+    <div className="md:min-w-[450px] flex flex-col w-full">
       {/* Back Button for Mobile */}
       <div className="bg-slate-500 px-4 py-2 mb-2 flex items-center">
         <IoArrowBack
