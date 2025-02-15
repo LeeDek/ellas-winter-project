@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <div
-      className={`flex sm:h-[450px] md:h-[550px] rounded-lg overflow-hidden bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 
+      className={`flex sm:h-[390px] md:h-[550px] rounded-lg overflow-hidden bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 
       ${selectedConversation ? "h-[320px]" : "min-w-[350px]"}`}
     >
       {/* Show Sidebar on Desktop or when no conversation is selected on mobile */}
